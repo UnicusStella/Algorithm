@@ -1,4 +1,4 @@
-/* // 1번째
+/* // 1번
 function solution(s) {
   var answer = s;
   let numbers = [
@@ -22,7 +22,7 @@ function solution(s) {
   return Number(answer);
 } */
 
-// 2번째 내장 매소드인 replace 를 사용해서 풀기
+// 2번 내장 매소드인 replace 를 사용해서 풀기
 function solution(s) {
   var answer = s
     .replace(/zero/gi, 0)
@@ -38,6 +38,5 @@ function solution(s) {
 
   return Number(answer);
 }
-// 2번째
 
 console.log(solution('one4seveneight'));
