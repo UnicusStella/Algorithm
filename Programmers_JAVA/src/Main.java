@@ -1,13 +1,13 @@
-import Agorithm.Programmers.Level_1.피자_나눠_먹기_1;
+import Agorithm.Programmers.Level_1.피자_나눠_먹기_2;
 
 public class Main {
     public static void main(String[] args) {
 
-        피자_나눠_먹기_1 stella = new 피자_나눠_먹기_1();
+        피자_나눠_먹기_2 stella = new 피자_나눠_먹기_2();
 
-        int n1 = 7;
-        int n2 = 1;
-        int n3 = 15;
+        int n1 = 6;
+        int n2 = 10;
+        int n3 = 4;
 
         System.out.println("n1 = " + stella.solution(n1));
         System.out.println("n2 = " + stella.solution(n2));
@@ -16,7 +16,7 @@ public class Main {
 }
 /*
     n	result
-    7	1
-    1	1
-    15	3
+    6	1
+    10	5
+    4	2
  */
