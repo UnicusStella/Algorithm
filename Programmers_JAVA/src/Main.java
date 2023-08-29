@@ -1,22 +1,21 @@
-import Agorithm.Programmers.Level_1.최빈값_구하기;
+import Agorithm.Programmers.Level_1.짝수는_싫어요;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        최빈값_구하기 stella = new 최빈값_구하기();
+        짝수는_싫어요 stella = new 짝수는_싫어요();
 
-        int[] array1 = {1, 2, 3, 3, 3, 4};
-        int[] array2 = {1, 1, 2, 2};
-        int[] array3 = {1};
+        int n1 = 10;
+        int n2 = 15;
 
-        System.out.println("array1 = " + stella.solution(array1)); // 3
-        System.out.println("array2 = " + stella.solution(array2)); // -1
-        System.out.println("array3 = " + stella.solution(array3)); // 1
+        System.out.println("n1 = " + Arrays.toString(stella.solution(n1))); // [1, 3, 5, 7, 9]
+        System.out.println("n2 = " + Arrays.toString(stella.solution(n2))); // [1, 3, 5, 7, 9, 11, 13, 15]
     }
 }
 /*
-    array	result
-    [1, 2, 3, 3, 3, 4]	3
-    [1, 1, 2, 2]	-1
-    [1]	1
+    n	result
+    10	[1, 3, 5, 7, 9]
+    15	[1, 3, 5, 7, 9, 11, 13, 15]
  */
