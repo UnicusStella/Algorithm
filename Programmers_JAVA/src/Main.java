@@ -1,25 +1,20 @@
-import Agorithm.Programmers.Level_1.진료순서_정하기;
-
-import java.util.Arrays;
+import Agorithm.Programmers.Level_1.순서쌍의_개수;
 
 public class Main {
     public static void main(String[] args) {
 
-        진료순서_정하기 stella = new 진료순서_정하기();
+        순서쌍의_개수 stella = new 순서쌍의_개수();
 
-        int[] emergency1 = {3, 76, 24};
-        int[] emergency2 = {1, 2, 3, 4, 5, 6, 7};
-        int[] emergency3 = {30, 10, 23, 6, 100};
+        int n1 = 20;
+        int n2 = 100;
 
 
-        System.out.println("Answer1 = " + Arrays.toString(stella.solution(emergency1)));
-        System.out.println("Answer1 = " + Arrays.toString(stella.solution(emergency2)));
-        System.out.println("Answer1 = " + Arrays.toString(stella.solution(emergency3)));
+        System.out.println("Answer1 = " + stella.solution(n1));
+        System.out.println("Answer2 = " + stella.solution(n2));
     }
 }
 /*
-        emergency	            result
-        [3, 76, 24]	            [3, 1, 2]
-        [1, 2, 3, 4, 5, 6, 7]	[7, 6, 5, 4, 3, 2, 1]
-        [30, 10, 23, 6, 100]	[2, 4, 3, 5, 1]
+        n	result
+        20	6
+        100	9
  */
