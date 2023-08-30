@@ -1,19 +1,22 @@
-import Agorithm.Programmers.Level_1.가위_바위_보;
+import Agorithm.Programmers.Level_1.구슬을_나누는_경우의_수;
 
 public class Main {
     public static void main(String[] args) {
 
-        가위_바위_보 stella = new 가위_바위_보();
+        구슬을_나누는_경우의_수 stella = new 구슬을_나누는_경우의_수();
 
-        String rsp1 = "2";
-        String rsp2 = "205";
+        int balls1 = 3;
+        int share1 = 2;
 
-        System.out.println("Answer1 = " + stella.solution(rsp1));
-        System.out.println("Answer2 = " + stella.solution(rsp2));
+        int balls2 = 5;
+        int share2 = 3;
+
+        System.out.println("Answer1 = " + stella.solution(balls1, share1));
+        System.out.println("Answer2 = " + stella.solution(balls2, share2));
     }
 }
 /*
-        rsp	    result
-        "2"	    "0"
-        "205"	"052"
+        balls	share	result
+        3	    2   	3
+        5	    3   	10
  */
