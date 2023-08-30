@@ -1,17 +1,28 @@
 import Agorithm.Programmers.Level_1.문자_반복_출력하기;
+import Agorithm.Programmers.Level_1.배열_자르기;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        문자_반복_출력하기 stella = new 문자_반복_출력하기();
+        배열_자르기 stella = new 배열_자르기();
 
-        String my_string = "hello";
-        int n1 = 3;
+        int[] numbers1 = {1, 2, 3, 4, 5};
+        int num1_1 = 1;
+        int num1_2 = 3;
 
-        System.out.println("Answer1 = " + stella.solution(my_string, n1));
+        int[] numbers2 = {1, 3, 5};
+        int num2_1 = 1;
+        int num2_2 = 2;
+
+
+        System.out.println("Answer1 = " + Arrays.toString(stella.solution(numbers1, num1_1, num1_2)));
+        System.out.println("Answer1 = " + Arrays.toString(stella.solution(numbers2, num2_1, num2_2)));
     }
 }
 /*
-        my_string	n	result
-        "hello"	3	"hhheeellllllooo"
+        numbers	        num1    num2	result
+        [1, 2, 3, 4, 5]	    1	    3	[2, 3, 4]
+        [1, 3, 5]	        1	    2	[3, 5]
  */
