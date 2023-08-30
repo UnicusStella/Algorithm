@@ -1,22 +1,19 @@
-import Agorithm.Programmers.Level_1.구슬을_나누는_경우의_수;
+import Agorithm.Programmers.Level_1.점의_위치_구하기;
 
 public class Main {
     public static void main(String[] args) {
 
-        구슬을_나누는_경우의_수 stella = new 구슬을_나누는_경우의_수();
+        점의_위치_구하기 stella = new 점의_위치_구하기();
 
-        int balls1 = 3;
-        int share1 = 2;
+        int[] dot1 = {2, 4};
+        int[] dot2 = {-7, 9};
 
-        int balls2 = 5;
-        int share2 = 3;
-
-        System.out.println("Answer1 = " + stella.solution(balls1, share1));
-        System.out.println("Answer2 = " + stella.solution(balls2, share2));
+        System.out.println("Answer1 = " + stella.solution(dot1));
+        System.out.println("Answer2 = " + stella.solution(dot2));
     }
 }
 /*
-        balls	share	result
-        3	    2   	3
-        5	    3   	10
+        dot	        result
+        [2, 4]	    1
+        [-7, 9]	    2
  */
