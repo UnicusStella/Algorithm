@@ -1,22 +1,19 @@
-import Agorithm.Programmers.Level_1.피자_나눠_먹기_3;
+import Agorithm.Programmers.Level_1.배열의_평균값;
 
 public class Main {
     public static void main(String[] args) {
 
-        피자_나눠_먹기_3 stella = new 피자_나눠_먹기_3();
+        배열의_평균값 stella = new 배열의_평균값();
 
-        int slice1 = 7;
-        int n1 = 10;
+        int[] number1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] number2 = {89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
 
-        int slice2 = 4;
-        int n2 = 12;
-
-        System.out.println("n1 = " + stella.solution(slice1, n1));
-        System.out.println("n2 = " + stella.solution(slice2, n2));
+        System.out.println("number1 = " + stella.solution(number1));
+        System.out.println("number2 = " + stella.solution(number2));
     }
 }
 /*
-    slice	n	result
-     7	    10	    2
-     4	    12	    3
+    numbers	result
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]             	5.5
+    [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]	94.0
  */
