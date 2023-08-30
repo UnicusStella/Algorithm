@@ -1,19 +1,23 @@
-import Agorithm.Programmers.Level_1.문자열_뒤집기;
+import Agorithm.Programmers.Level_1.배열_뒤집기;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        문자열_뒤집기 stella = new 문자열_뒤집기();
+        배열_뒤집기 stella = new 배열_뒤집기();
 
-        String my_String1 = "noraj";
-        String my_String2 = "daerb";
+        int[] num_list1 = {1, 2, 3, 4, 5};
+        int[] num_list2 = {1, 1, 1, 1, 1, 2};
+        int[] num_list3 = {1, 0, 1, 1, 1, 3, 5};
 
-        System.out.println("Answer1 = " + stella.solution(my_String1));
-        System.out.println("Answer1 = " + stella.solution(my_String2));
+        System.out.println("Answer1 = " + Arrays.toString(stella.solution(num_list1)));
+        System.out.println("Answer1 = " + Arrays.toString(stella.solution(num_list2)));
+        System.out.println("Answer1 = " + Arrays.toString(stella.solution(num_list3)));
     }
 }
 /*
-        my_string	return
-        "jaron"	"noraj"
-        "bread"	"daerb"
+        [1, 2, 3, 4, 5]	[5, 4, 3, 2, 1]
+        [1, 1, 1, 1, 1, 2]	[2, 1, 1, 1, 1, 1]
+        [1, 0, 1, 1, 1, 3, 5]	[5, 3, 1, 1, 1, 0, 1]
  */
