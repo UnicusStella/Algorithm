@@ -1,19 +1,19 @@
-import Agorithm.Programmers.Level_1.모스부호_1;
+import Agorithm.Programmers.Level_1.가위_바위_보;
 
 public class Main {
     public static void main(String[] args) {
 
-        모스부호_1 stella = new 모스부호_1();
+        가위_바위_보 stella = new 가위_바위_보();
 
-        String letter1 = ".... . .-.. .-.. ---";
-        String letter2 = ".--. -.-- - .... --- -.";
+        String rsp1 = "2";
+        String rsp2 = "205";
 
-        System.out.println("Answer1 = " + stella.solution(letter1));
-        System.out.println("Answer2 = " + stella.solution(letter2));
+        System.out.println("Answer1 = " + stella.solution(rsp1));
+        System.out.println("Answer2 = " + stella.solution(rsp2));
     }
 }
 /*
-        letter	result
-        ".... . .-.. .-.. ---"	"hello"
-        ".--. -.-- - .... --- -."	"python"
+        rsp	    result
+        "2"	    "0"
+        "205"	"052"
  */
