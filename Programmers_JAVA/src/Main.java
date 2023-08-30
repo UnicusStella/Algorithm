@@ -1,19 +1,20 @@
 import Agorithm.Programmers.Level_1.배열의_평균값;
+import Agorithm.Programmers.Level_1.옷가게_할인_받기;
 
 public class Main {
     public static void main(String[] args) {
 
-        배열의_평균값 stella = new 배열의_평균값();
+        옷가게_할인_받기 stella = new 옷가게_할인_받기();
 
-        int[] number1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int[] number2 = {89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
+        int price1 = 150000;
+        int price2 = 580000;
 
-        System.out.println("number1 = " + stella.solution(number1));
-        System.out.println("number2 = " + stella.solution(number2));
+        System.out.println("Answer1 = " + stella.solution(price1));
+        System.out.println("Answer2 = " + stella.solution(price2));
     }
 }
 /*
-    numbers	result
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]             	5.5
-    [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]	94.0
+        price	result
+        150,000	142,500
+        580,000	464,000
  */
