@@ -1,19 +1,24 @@
-import Agorithm.Programmers.Level_1.점의_위치_구하기;
+import Agorithm.Programmers.Level_1.이차원으로_만들기;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        점의_위치_구하기 stella = new 점의_위치_구하기();
+        이차원으로_만들기 stella = new 이차원으로_만들기();
 
-        int[] dot1 = {2, 4};
-        int[] dot2 = {-7, 9};
+        int[] num_list1 = {1, 2, 3, 4, 5, 6, 7, 8};
+        int n1 = 2;
 
-        System.out.println("Answer1 = " + stella.solution(dot1));
-        System.out.println("Answer2 = " + stella.solution(dot2));
+        int[] num_list2 = {100, 95, 2, 4, 5, 6, 18, 33, 948};
+        int n2 = 3;
+
+        System.out.println("Answer1 = " + Arrays.deepToString(stella.solution(num_list1, n1)));
+        System.out.println("Answer1 = " + Arrays.deepToString(stella.solution(num_list2, n2)));
     }
 }
 /*
-        dot	        result
-        [2, 4]	    1
-        [-7, 9]	    2
+        num_list	                        n	    result
+        [1, 2, 3, 4, 5, 6, 7, 8]	        2	    [[1, 2], [3, 4], [5, 6], [7, 8]]
+        [100, 95, 2, 4, 5, 6, 18, 33, 948]	3	    [[100, 95, 2], [4, 5, 6], [18, 33, 948]]
  */
