@@ -4,6 +4,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class 모스부호_1 {
+    public static void main(String[] args) {
+
+        순서쌍의_개수 stella = new 순서쌍의_개수();
+
+        int n1 = 20;
+        int n2 = 100;
+
+
+        System.out.println("Answer1 = " + stella.solution(n1));
+        System.out.println("Answer2 = " + stella.solution(n2));
+    }
+
+    /*
+            n	result
+            20	6
+            100	9
+     */
     public String solution(String letter) {
         String answer = "";
         String[] morse = new String[]{

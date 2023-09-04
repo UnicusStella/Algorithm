@@ -5,9 +5,22 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class 점의_위치_구하기 {
-    public final String PLUS = "+";
-    public final String MINUS = "-";
+    public static void main(String[] args) {
 
+        점의_위치_구하기 stella = new 점의_위치_구하기();
+
+        int[] dot1 = {2, 4};
+        int[] dot2 = {-7, 9};
+
+        System.out.println("Answer1 = " + stella.solution(dot1));
+        System.out.println("Answer2 = " + stella.solution(dot2));
+    }
+
+    /*
+            dot	        result
+            [2, 4]	    1
+            [-7, 9]	    2
+    */
     public int solution(int[] dot) {
 
         return dot[0] > 0 && dot[1] > 0 ? 1
@@ -16,7 +29,11 @@ public class 점의_위치_구하기 {
                 : dot[0] < 0 && dot[1] > 0
                 ? 2
                 : 3;
+
     }
+
+    public final String PLUS = "+";
+    public final String MINUS = "-";
 
     public int solution1(int[] dot) {
         int answer = 0;
