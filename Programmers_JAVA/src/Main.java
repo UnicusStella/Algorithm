@@ -1,24 +1,32 @@
-import Agorithm.Programmers.Level_1.이차원으로_만들기;
-
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
-        이차원으로_만들기 stella = new 이차원으로_만들기();
+        int n1 = 7;
 
-        int[] num_list1 = {1, 2, 3, 4, 5, 6, 7, 8};
-        int n1 = 2;
+        int n2 = 10;
 
-        int[] num_list2 = {100, 95, 2, 4, 5, 6, 18, 33, 948};
-        int n2 = 3;
 
-        System.out.println("Answer1 = " + Arrays.deepToString(stella.solution(num_list1, n1)));
-        System.out.println("Answer1 = " + Arrays.deepToString(stella.solution(num_list2, n2)));
+        System.out.println("Answer1 = " + solution(n1));
+        System.out.println("Answer2 = " + solution(n2));
+    }
+
+    /*
+        n	    result
+        24	    [1, 2, 3, 4, 6, 8, 12, 24]
+        29	    [1, 29]
+    */
+    public static int solution(int n) {
+        int answer = 0;
+
+        if (n % 2 == 0) {
+            for (int i = 2; i <= n; i += 2) {
+                answer += Math.pow(i, 2);
+            }
+        } else {
+            for (int i = 1; i <= n; i += 2) {
+                answer += i;
+            }
+        }
+        return answer;
     }
 }
-/*
-        num_list	                        n	    result
-        [1, 2, 3, 4, 5, 6, 7, 8]	        2	    [[1, 2], [3, 4], [5, 6], [7, 8]]
-        [100, 95, 2, 4, 5, 6, 18, 33, 948]	3	    [[100, 95, 2], [4, 5, 6], [18, 33, 948]]
- */
