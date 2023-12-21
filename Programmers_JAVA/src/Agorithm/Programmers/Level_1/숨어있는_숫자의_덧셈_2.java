@@ -28,5 +28,15 @@ public class 숨어있는_숫자의_덧셈_2 {
                 .mapToInt(value -> value.equals("") == true ? 0 : Integer.parseInt(value))
                 .sum();
     }
+    // Stream 좀더 간략화
+    public int solution2(String my_string) {
+        int answer = 0;
+
+        return Arrays.stream(my_string.replaceAll("[\\D]", " ")
+                        .split(" "))
+                .filter(string -> !string.isEmpty())
+                .mapToInt(Integer::parseInt)
+                .sum();
+    }
 }
 
