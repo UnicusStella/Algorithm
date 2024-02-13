@@ -23,6 +23,7 @@ public class 특이한_정렬 {
         [10000,20,36,47,40,6,10,7000]	30	    [36, 40, 20, 47, 10, 6, 7000, 10000]
      */
     public int[] solution(int[] numlist, int n) {
+
         List<String> answer = new ArrayList<>();
 
         List<String> list = new ArrayList<>();
