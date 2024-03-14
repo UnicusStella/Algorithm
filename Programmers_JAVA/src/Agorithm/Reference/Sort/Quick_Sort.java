@@ -25,9 +25,8 @@ public class Quick_Sort {
     }
 
     /*
-    sort                result
-    [5,2,9,7,3,1,6]     [1,2,3,5,6,7,9]
-
+        sort                result
+        [5,2,9,7,3,1,6]     [1,2,3,5,6,7,9]
     */
     public int[] solution(int[] sortArr) {
 
