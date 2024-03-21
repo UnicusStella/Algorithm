@@ -22,7 +22,6 @@ public class 피보나치_수 {
     public int solution(int n) {
 
         DP[1] = 1;
-        DP[0] = 0;
 
         return Fibo(n);
     }
@@ -38,9 +37,8 @@ public class 피보나치_수 {
 
         if (n < 2) return n;
 
-        if (DP[n] > 0) return DP[n];
-
-        DP[n] = Fibo(n - 1) + Fibo(n - 2);
+        if (DP[n] == 0)
+            DP[n] = Fibo(n - 1) + Fibo(n - 2);
 
         return DP[n];
     }
