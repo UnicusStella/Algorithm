@@ -1,11 +1,11 @@
 package Agorithm.Programmers.Level_2;
 
-public class 파보나치_수 {
+public class 피보나치_수 {
     public int[] DP = new int[100_000];
 
     public static void main(String[] args) {
 
-        파보나치_수 stella = new 파보나치_수();
+        피보나치_수 stella = new 피보나치_수();
 
         int n1 = 3;
         int n2 = 5;
